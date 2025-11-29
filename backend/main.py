@@ -14,8 +14,8 @@ from backend.utils import init_gemini, get_gemini_model
 app = FastAPI()
 app.add_middleware(CORSMiddleware,
                    allow_origins=['http://localhost:5500', 'http://localhost:3000'])
-ASSEMBLYAI_KEY = "f008b3169bd348ec897759238cfef706"
-GEMINI_KEY = "AIzaSyCDXMqA741evRzXNA9ZCftZJSzXOaW0G18"
+ASSEMBLYAI_KEY = "add here"
+GEMINI_KEY = "add here"
 
 init_gemini(GEMINI_KEY)
 
@@ -122,3 +122,4 @@ Provide a short and clean summary.
     response = model.generate_content(prompt)
 
     return {"summary": response.text}
+
