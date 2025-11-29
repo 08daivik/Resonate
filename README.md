@@ -115,3 +115,8 @@ GEMINI_KEY=your_key_here
 Upload a file → ask questions → generate summaries.
 
 ---
+## 📸 Screenshots
+
+### Main Interface
+![UI](assets/main_ui.png)
+
