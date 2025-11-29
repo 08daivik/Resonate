@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Resonate AI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="welcome-banner">
+        <h1>RESONATE AI</h1>
+        <p>Welcome to Resonate AI. Upload your docs to start processing.</p>
+    </div>
+
+    <div class="main-grid">
+
+        <!-- Upload Section -->
+        <div class="glass card upload-card">
+            <h2>Upload File</h2>
+            <div id="dropArea" class="drop-box">
+                Drag & Drop / Click to Upload
+            </div>
+            <p id="fileName">No file selected</p>
+            <button class="btn" id="upload-btn">Process File</button>
+            <!-- Upload Status -->
+             <h1></h1>
+        <div class="glass card status-card">
+            <h2>Upload Status</h2>
+            <div id="uploadStatus" class="content-box">
+                No file processed
+            </div>
+        </div>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="glass card summary-card">
+            <h2>Summary</h2>
+            <button class="btn" onclick="getSummary()">Generate</button>
+            <div id="summaryLoader" class="loader hidden"></div>
+            <div id="summaryBox" class="content-box"></div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="glass card chat-card">
+            <h2>Ask a Question</h2>
+            <div id="chatBox" class="chat-box"></div>
+
+            <div class="input-row">
+                <input type="text" id="question" placeholder="Ask anything..." />
+                <button class="btn ask-btn" onclick="askQuestion()">Ask</button>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
